@@ -20,11 +20,11 @@ We argued that the worst-case running time for insertion sort was $O(n^2)$ but t
 
 **Exercise:** Describe what the input data, `numbers`, should look like to actually achieve the worst- and best-case running times.
 
-### Comparison sort comparison
+### Comparison sort
 
 **Exercise:** Insertion sort runs in $O(n^2)$ when the input is sorted in the reverse order, but can process sorted sequences in $O(n)$. If we can recognise that the input is ordered in reverse, we could first reverse the sequence and then run the insertion sort. Show that we can reverse a sequence, in place, in $O(n)$. Try to adapt insertion sort, so you first recognise consecutive runs of non-increasing elements, then reverse these before you run insertion sort on the result. Show that the worst-case running time is still $O(n^2)$, but try to compare the modified algorithm with the traditional insertion sort to see if it works better in practice.
 
-### Bubble sort
+### Bubble and cocktail sort
 
 Recall the invariants of the inner ($I$) and outer ($O_n$) loop of bubble sort from the book:
 
